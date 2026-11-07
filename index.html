@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Repo du jour : un repo GitHub par jour, expliqué en une minute</title>
+<meta name="description" content="Chaque jour, un projet open source du trending GitHub expliqué en français : ce qu’il fait, comment l’installer et une idée pour en tirer parti.">
+<link rel="canonical" href="https://oghouz.github.io/repodujour-site/">
+<link rel="icon" href="/repodujour-site/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/repodujour-site/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Repo du jour" href="/repodujour-site/rss.xml">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Repo du jour">
+<meta property="og:title" content="Repo du jour : un repo GitHub par jour, expliqué en une minute">
+<meta property="og:description" content="Chaque jour, un projet open source du trending GitHub expliqué en français : ce qu’il fait, comment l’installer et une idée pour en tirer parti.">
+<meta property="og:url" content="https://oghouz.github.io/repodujour-site/">
+<meta property="og:image" content="https://oghouz.github.io/repodujour-site/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0a0b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/repodujour-site/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Repo du jour","url":"https://oghouz.github.io/repodujour-site/","inLanguage":"fr"}</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/repodujour-site/" aria-label="Repo du jour, accueil"><img src="/repodujour-site/logo.svg" alt="" width="26" height="30">REPO DU JOUR</a>
+  <nav class="nav"><a href="/repodujour-site/#episodes">Épisodes</a><a href="/repodujour-site/#categories">Catégories</a></nav>
+</div></header>
+<main>
+<section class="hero"><div class="wrap">
+  <span class="eyebrow">Un repo GitHub par jour</span>
+  <h1>Les meilleurs projets open source, expliqués en une minute.</h1>
+  <p class="lead">Chaque jour, un repo du trending GitHub : ce qu’il fait, comment l’installer, et une idée pour en tirer parti.</p>
+  <a class="today" href="/repodujour-site/1/">
+    <img src="/repodujour-site/1/cover.png" alt="Miniature de l’épisode 1" width="540" height="960">
+    <div><span class="eyebrow">Épisode 1 · 7 novembre 2026</span>
+    <h2>OpenMausBot&nbsp;: équipe de bots IA en local, open source</h2><p>OpenMausBot est une app de chat open source où chaque bot est un vrai agent IA. Claude ou Codex en local, 500+ apps, Mac, Windows, Ubuntu.</p><span class="btn">Voir l’épisode →</span></div>
+  </a>
+</div></section>
+<section class="section" id="episodes"><div class="wrap">
+  <h2 class="title" id="categories">Tous les épisodes</h2>
+  <div class="tools"><input class="search" type="search" placeholder="Rechercher un repo, un sujet…" aria-label="Rechercher"><button class="chip" type="button" data-filter="ia" aria-pressed="false">IA</button></div>
+  <div class="grid"><a class="card" href="/repodujour-site/1/" data-cat="ia" data-search="milind-soni/openmausbot openmausbot : équipe de bots ia en local, open source openmausbot est une app de chat open source où chaque bot est un vrai agent ia. claude ou codex en local, 500+ apps, mac, windows, ubuntu. ia typescript un bot = un vrai agent ia tourne sur ta machine 500+ apps via composio">
+  <span class="meta">#1 · 7 novembre 2026 · IA</span>
+  <span class="repo">milind-soni/OpenMausBot</span>
+  <h3>OpenMausBot&nbsp;: équipe de bots IA en local, open source</h3>
+</a></div>
+  <p class="empty" hidden>Aucun épisode ne correspond.</p>
+</div></section>
+
+<script>
+(() => {
+  const q = document.querySelector('.search'), cards = [...document.querySelectorAll('.card')], empty = document.querySelector('.grid + .empty');
+  let cat = '';
+  const apply = () => {
+    const t = q.value.trim().toLowerCase(); let n = 0;
+    for (const c of cards) { const ok = (!cat || c.dataset.cat === cat) && (!t || c.dataset.search.includes(t)); c.hidden = !ok; if (ok) n++; }
+    empty.hidden = n > 0;
+  };
+  q.addEventListener('input', apply);
+  for (const b of document.querySelectorAll('.chip')) b.addEventListener('click', () => {
+    cat = cat === b.dataset.filter ? '' : b.dataset.filter;
+    for (const x of document.querySelectorAll('.chip')) x.setAttribute('aria-pressed', String(x.dataset.filter === cat));
+    apply();
+  });
+})();
+</script>
+</main>
+<footer class="foot"><div class="wrap">
+  <div>Repo du jour : un repo GitHub par jour, expliqué en une minute.</div>
+  <nav><a href="/repodujour-site/rss.xml">RSS</a><a href="/repodujour-site/confidentialite/">Confidentialité</a><a href="/repodujour-site/conditions/">Conditions</a></nav>
+</div></footer>
+</body>
+</html>

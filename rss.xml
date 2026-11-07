@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>
+<title>Repo du jour</title><link>https://oghouz.github.io/repodujour-site/</link><description>Un repo GitHub par jour, expliqué en une minute.</description><language>fr</language>
+<atom:link href="https://oghouz.github.io/repodujour-site/rss.xml" rel="self" type="application/rss+xml"/>
+<item><title>#1 · OpenMausBot : équipe de bots IA en local, open source</title><link>https://oghouz.github.io/repodujour-site/1/</link><guid>https://oghouz.github.io/repodujour-site/1/</guid>
+<pubDate>Sat, 07 Nov 2026 08:00:00 GMT</pubDate><category>IA</category>
+<description>OpenMausBot est une app de chat open source où chaque bot est un vrai agent IA. Claude ou Codex en local, 500+ apps, Mac, Windows, Ubuntu.
+
+Idée : Installe des bots IA chez des indépendants</description></item>
+</channel></rss>
